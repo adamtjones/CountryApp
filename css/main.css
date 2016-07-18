@@ -1,0 +1,36 @@
+body {
+  background-color: #48586F;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFC0;
+  margin-top: 50px;
+  text-align: center; }
+
+nav {
+  text-align: center; }
+
+.omaha {
+  height: 5px;
+  background-color: #FFFFC0; }
+
+.utah {
+  height: 5px;
+  background-color: #D6C496; }
+
+.tulsa {
+  height: 5px;
+  background-color: #D62E2E; }
+
+.masthead {
+  text-align: center; }
+
+.dallas {
+  text-align: center; }
+
+input {
+  background-color: #D6C496; }
+
+button {
+  color: #D6C496; }
+
+.results {
+  text-align: center; }

@@ -1,0 +1,46 @@
+$blue:#48586F;
+$cream:#FFFFC0;
+$tan:#D6C496;
+$red:#D62E2E;
+$charcoal:#283D3E;
+
+body {
+	background-color:$blue;
+	font-family: 'Nunito', sans-serif;
+	color:$cream;
+	//text-decoration:bold;
+	margin-top: 50px;
+	text-align:center;
+}
+nav {
+	text-align:center;
+}
+.omaha {
+	height:5px;
+	background-color:$cream;
+}
+.utah {
+	height:5px;
+	background-color:$tan;
+}
+.tulsa {
+	height:5px;
+	background-color:$red;
+}
+
+.masthead {
+	text-align:center;
+}
+.dallas {
+	text-align:center;
+}
+
+input {
+	background-color:$tan;
+}
+button {
+	color:$tan;
+}
+.results {
+	text-align:center;
+}
