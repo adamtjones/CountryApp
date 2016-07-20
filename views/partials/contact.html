@@ -1,21 +1,21 @@
-<div>
+<div class="col-lg-12">
 	</br>
-	<form class="col-sm-12 tellUs">
+	<form ng-submit="controller.submit()" name="form" class="col-lg-12 tellUs">
 		<label>Your name</label>
-		<input placeholder="ex: Karen"></input>
+		<input ng-model="controller.form.name" placeholder="ex: Karen"></input>
 		</br>
 		<label>Your location</label>
-		<input placeholder="ex: Panama City"></input>
+		<input ng-model="controller.form.location" placeholder="ex: Panama City"></input>
 		</br>
 		<label>Favorite Country</label>
-		<input placeholder="ex: Bolivia"></input>
+		<input ng-model="controller.form.favoriteCountry" placeholder="ex: Bolivia"></input>
 		</br>
 		<label>Favorite Capital</label>
-		<input placeholder="ex: Tokyo"></input>
+		<input ng-model="controller.form.favoriteCapital" placeholder="ex: Tokyo"></input>
 		</br>
 		<label>Why?</label>
-		<textarea placeholder="ex: they have the best fried chicken!"></textarea>
+		<textarea ng-model="controller.form.why" placeholder="ex: they have the best fried chicken!"></textarea>
 		</br>
-		<button>Submit</button>
+		<button type="submit">Submit</button>
 	</form>
 </div>

@@ -1,9 +1,13 @@
 (function() {
     'use strict';
     angular
-        .module('coffee', ['ui.router'])
-        .config(function($stateProvider, $urlRouterProvider) {
+        .module('coffee', ['ui.router','backand'])
+        .config(function($stateProvider, $urlRouterProvider, BackandProvider) {
             
+            BackandProvider.setAppName('newcountryapp');
+            BackandProvider.setSignUpToken('33f05d38-2137-4ca2-bcb8-303b7565b94f');
+            BackandProvider.setAnonymousToken('6a7fe20f-21d2-4abd-a727-e1388c2d72ad');
+
             //maybe don't need this:
             $urlRouterProvider.otherwise('/');
 

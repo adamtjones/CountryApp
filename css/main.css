@@ -6,7 +6,11 @@ body {
   text-align: center; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
+
+a {
+  color: #FFFFC0; }
 
 .omaha {
   height: 5px;
@@ -21,16 +25,21 @@ nav {
   background-color: #D62E2E; }
 
 .masthead {
-  text-align: center; }
+  text-align: center;
+  text-decoration: underline; }
 
 .dallas {
   text-align: center; }
 
 input {
-  background-color: #D6C496; }
+  background-color: #D6C496;
+  color: #283D3E; }
 
 button {
-  color: #D6C496; }
+  background-color: #D6C496; }
 
 .results {
   text-align: center; }
+
+main {
+  height: 320px; }
