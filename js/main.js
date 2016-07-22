@@ -30,6 +30,12 @@
                 templateUrl: '/views/partials/contact.html',
                 controller: 'contactController',
                 controllerAs: 'controller'
+            })
+            .state('chart', {
+                url: '/chart',
+                templateUrl: '/views/partials/chart.html',
+                controller: 'chartController',
+                controllerAs: 'controller'
             });
 
         });

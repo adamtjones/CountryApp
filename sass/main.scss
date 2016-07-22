@@ -32,20 +32,38 @@ a {
 	background-color:$red;
 }
 
-.masthead {
+h1 {
 	text-align:center;
-	text-decoration:underline;
+	font-size:32px;
+	//text-decoration:underline;
 }
 .dallas {
 	text-align:center;
 }
 
+label {
+	color:$cream;
+	border-radius:5px;
+	font-size:32px;
+	font-weight:400;
+}
 input {
 	background-color:$tan;
 	color:$charcoal;
+	border-radius:5px;
+}
+textarea {
+	background-color:$tan;
+	color:$charcoal;
+	border-radius:5px;
 }
 button {
-	background-color:$tan;
+	background-color:$blue;
+	color:$cream;
+	border-radius:5px;
+}
+.default {
+	background-color:$red;
 }
 .results {
 	text-align:center;
@@ -53,3 +71,13 @@ button {
 main {
 	height:320px;
 }
+.population {
+	height:300px;
+	width:300px;
+	margin:auto;
+	display:block;
+}
+h3 {
+	font-size:32px;
+}
+

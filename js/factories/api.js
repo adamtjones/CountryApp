@@ -17,7 +17,16 @@
             function getInfo(country) {
                 var call = $http({
                     method: 'GET',
-                    url: "https://restcountries.eu/rest/v1/name/" + country + "",
+                    url: "https://restcountries.eu/rest/v1/name/" + country,
+                });
+
+                return call;
+            }
+            /*new function for population data from entire API*/
+            function getPopData() {
+                var call = $http({
+                    method:'GET',
+                    url: "https://restcountries.eu/rest/v1/all",
                 });
 
                 return call;
@@ -37,6 +46,7 @@
                 postInfo,
                 getInfo,
                 searchData,
+                getPopData
             }
         })
 })();

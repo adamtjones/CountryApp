@@ -3,10 +3,11 @@
 	<div class="col-sm-6">
 	<h3>Country: {{controller.data.name}}</h3>
 	<h3>Capital: {{controller.data.capital}}</h3>
+	<h3>Native Name: {{controller.data.nativeName}}</h3>
 	</div>
 	<div class="col-sm-6">
-	<h3>Region: {{controller.data.region}}</h3>
-	<h3>Native Name: {{controller.data.nativeName}}</h3>
-	<h3>Population: {{controller.data.population}}</h3>
+	<h3>Demonym: {{controller.data.demonym}}</h3>
+	<h3>Region: {{controller.data.subregion}}</h3>
+	<h3>Population: {{controller.data.population | number}}</h3>
 </div>
 </div>
