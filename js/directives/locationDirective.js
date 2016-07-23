@@ -1,6 +1,6 @@
 
       angular
-      .module('coffee')
+      .module('newApp')
       .directive('location', function (API) {
 
   return {

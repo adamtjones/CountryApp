@@ -1,14 +1,14 @@
 (function() {
     'use strict';
     angular
-        .module('coffee')
+        .module('newApp')
         .factory('API', function($http) {
 
             var postInfo = function(data) {
                 var gettingData = $http({
                     method: 'POST',
                     data: data,
-                    url: 'https://api.backand.com:443/1/objects/posts',
+                    url: "https://api.backand.com:443/1/objects/posts",
                 });
 
                 return gettingData;
@@ -40,8 +40,6 @@
                 return data;
 
             }
-
-
             return {
                 postInfo,
                 getInfo,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="coffee">
+<!--changed ng-app name from 'coffee per Jake'-->
+<html ng-app="newApp">
 	<head>
 		<!--Google Fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
@@ -23,7 +24,8 @@
 			</div>
 			<nav class="col-sm-12">
 				<a ui-sref="home">Home</a> |
-				<a ui-sref="results">Results</a> |
+				<!--removed Results link from nav per Jake
+				<a ui-sref="results">Results</a> |-->
 				<a ui-sref="contact">Contact</a> |
 				<a ui-sref="chart">Chart</a>
 			</nav>
@@ -31,29 +33,27 @@
 		
 		<main ui-view></main>
 		
-		
-		
 		<footer>
 			<div class="col-lg-12 colors"><div class="omaha">
+			</div>
+			<div class="utah">
+			</div>
+			<div class="tulsa">
+			</div>
 		</div>
-		<div class="utah">
-		</div>
-		<div class="tulsa">
-		</div>
-	</div>
-			<h4>Have fun traveling the globe!</h4>
-		</footer>
-		<!--BackAnd JS script-->
-		<script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
-		<!--ChartJS script-->
-		<script src="/node_modules/chart.js/dist/Chart.js"></script>
-		<!--links to JS files-->
-		<script src="js/main.js"></script>
-		<script src="js/factories/api.js"></script>
-		<script src="js/factories/backand.js"></script>
-		<script src="js/controllers/home.js"></script>
-		<script src="js/controllers/results.js"></script>
-		<script src="js/controllers/contact.js"></script>
-		<script src="js/controllers/chart.js"></script>
-	</body>
+		<h4>Have fun traveling the globe!</h4>
+	</footer>
+	<!--BackAnd JS script-->
+	<script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>
+	<!--ChartJS script-->
+	<script src="/node_modules/chart.js/dist/Chart.js"></script>
+	<!--links to JS files-->
+	<script src="js/main.js"></script>
+	<script src="js/factories/api.js"></script>
+	<script src="js/factories/backand.js"></script>
+	<script src="js/controllers/home.js"></script>
+	<script src="js/controllers/results.js"></script>
+	<script src="js/controllers/contact.js"></script>
+	<script src="js/controllers/chart.js"></script>
+</body>
 </html>

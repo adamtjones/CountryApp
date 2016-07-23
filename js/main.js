@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('coffee', ['ui.router','backand'])
+        .module('newApp', ['ui.router','backand'])
         .config(function($stateProvider, $urlRouterProvider, BackandProvider) {
             
             BackandProvider.setAppName('newcountryapp');
@@ -11,7 +11,6 @@
             //maybe don't need this:
             $urlRouterProvider.otherwise('/');
 
-            //def need these:
             $stateProvider
             .state('home', {
                     url: '/',

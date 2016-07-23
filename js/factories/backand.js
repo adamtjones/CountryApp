@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('coffee')
+        .module('newApp')
         .factory('back', function($http, Backand) {
 
             var postInfo = function(data) {
@@ -13,11 +13,9 @@
 
                 return gettingData;
             }
-
             return {
 
                 postInfo,
-
             }
         });
 })();

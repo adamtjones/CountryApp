@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('coffee')
+        .module('newApp')
         .controller('chartController', function(API, back, $filter) {
             var vm = this;
 
@@ -18,12 +18,12 @@
 	            
 	            burrito = burrito.reverse();
 
+	            /*limitTo part isn't working*/
 	            var martha = $filter("limitTo")(burrito,10);
 	            console.log(martha);
 
 	            martha = martha;
 
-	            
 
             	var countryPopName = burrito.map(function(country){
             		return country.name;

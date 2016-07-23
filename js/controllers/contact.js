@@ -2,23 +2,25 @@
     'use strict';
 
     angular
-        .module('coffee')
+        .module('newApp')
         .controller('contactController', function(API, $stateParams) {
             var vm = this;
 
             vm.submit = function() {
-                var postInfo /* changed from postPix*/ = API.postInfo(vm.form);
+                var postInfo = API.postInfo(vm.form);
 
                 postInfo.then(function(response) {
                     console.log(response);
                 })
             }
 
-            /*vm.clearPost = function(){
-                vm.controller.form.title = null;
-                vm.controller.form.description = null;
-                vm.controller.form.url = null;
-            }*/
+            vm.clearPost = function(){
+                vm.controller.form.name = null;
+                vm.controller.form.location = null;
+                vm.controller.form.favoriteCountry = null;
+                vm.controller.form.favoriteCapital = null;
+                vm.controller.form.why = null;
+            }
 
         });
 })();

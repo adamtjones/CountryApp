@@ -1,17 +1,16 @@
 (function() {
     'use strict';
-    
+
     angular
-    .module('coffee')
-    .controller('resultsController', function(API,$stateParams) {
-       var vm = this;
+        .module('newApp')
+        .controller('resultsController', function(API, $stateParams) {
+            var vm = this;
 
-       var country = $stateParams.country;
+            var country = $stateParams.country;
 
-      var data = API.getInfo(country);
-      data.then(function(response) {
-        vm.data = response.data[0];
-      });
-
-       });
+            var data = API.getInfo(country);
+            data.then(function(response) {
+                vm.data = response.data[0];
+            });
+        });
 })();
