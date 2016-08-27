@@ -16,20 +16,26 @@
 		<script src="/node_modules/angular/angular.js"></script>
 		<!--Angular UI-Router-->
 		<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+		<!--Animate.css-->
+		<link rel="stylesheet" href="bower_components/animate.css/animate.css">
 	</head>
 	<body>
+		<div class="container">
 		<div class="row">
 			<div class="col-sm-12 masthead">
-				<h1>Countries & Capitals</h2>
+				<h1 class="animated pulse">Countries & Capitals</h2>
 			</div>
 			<nav class="col-sm-12">
 				<a ui-sref="home">Home</a> |
 				<!--removed Results link from nav per Jake
 				<a ui-sref="results">Results</a> |-->
-				<a ui-sref="contact">Contact</a> |
-				<a ui-sref="chart">Chart</a>
+				<a ui-sref="contact">Contact</a> 
+				<!--|
+				removing, Chart not formatted
+				<a ui-sref="chart">Chart</a>-->
 			</nav>
 		</div>
+	</div>
 		
 		<main ui-view></main>
 		
@@ -41,7 +47,7 @@
 			<div class="tulsa">
 			</div>
 		</div>
-		<h4>Have fun traveling the globe!</h4>
+		<h4>Have fun exploring the globe!</h4>
 	</footer>
 	<!--BackAnd JS script-->
 	<script src="//cdn.backand.net/backand/dist/1.8.2/backand.min.js"></script>

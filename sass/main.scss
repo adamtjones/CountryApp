@@ -8,76 +8,82 @@ body {
 	background-color:$blue;
 	font-family: 'Nunito', sans-serif;
 	color:$cream;
-	//text-decoration:bold;
 	margin-top: 50px;
 	text-align:center;
-}
-nav {
+
+	nav {
 	text-align:center;
 	margin-bottom:40px;
-}
-a {
-	color:$cream;
-}
-.omaha {
+
+		a {
+		color:$cream;
+		}
+	}
+	.omaha {
 	height:5px;
 	background-color:$cream;
-}
-.utah {
-	height:5px;
-	background-color:$tan;
-}
-.tulsa {
-	height:5px;
-	background-color:$red;
+	}
+	.utah {
+		height:5px;
+		background-color:$tan;
+	}
+	.tulsa {
+		height:5px;
+		background-color:$red;
+	}
+
+	h1 {
+		text-align:center;
+		font-size:32px;
+	}
+	.dallas {
+		text-align:center;
+	
+		label {
+			color:$cream;
+			border-radius:5px;
+			font-size:32px;
+			font-weight:400;
+		}
+		input {
+			background-color:$tan;
+			color:$charcoal;
+			border-radius:5px;
+		}
+		textarea {
+			background-color:$tan;
+			color:$charcoal;
+			border-radius:5px;
+		}
+		button {
+			background-color:$blue;
+			color:$cream;
+			border-radius:5px;
+		}
+
+	}
+	.results {
+		text-align:center;
+	}
+
+	main {
+		height:320px;
+		
+		h3 {
+			font-size:4vmin;
+			// formerly:
+			// font-size:32px;
+		}
+	}
 }
 
-h1 {
-	text-align:center;
-	font-size:32px;
-}
 
-.dallas {
-	text-align:center;
-}
-
-label {
-	color:$cream;
-	border-radius:5px;
-	font-size:32px;
-	font-weight:400;
-}
-input {
-	background-color:$tan;
-	color:$charcoal;
-	border-radius:5px;
-}
-textarea {
-	background-color:$tan;
-	color:$charcoal;
-	border-radius:5px;
-}
-button {
-	background-color:$blue;
-	color:$cream;
-	border-radius:5px;
-}
-.default {
-	background-color:$red;
-}
-.results {
-	text-align:center;
-}
-main {
-	height:320px;
-}
 .population {
 	height:300px;
 	width:300px;
 	margin:auto;
 	display:block;
+	border:2px solid green;
 }
-h3 {
-	font-size:32px;
-}
+
 
